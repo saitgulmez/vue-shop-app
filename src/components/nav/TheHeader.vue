@@ -18,6 +18,7 @@
       </ul>
     </nav>
     <div>
+      <button class="btn btn-primary">Button</button>
       <button v-if="!isLoggedIn" @click="login">Login</button>
       <button v-if="isLoggedIn" @click="logout">Logout</button>
     </div>
