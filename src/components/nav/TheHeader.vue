@@ -1,7 +1,9 @@
 <template>
+
+
   <header>
     <h1>
-      <router-link to="/">VueShop</router-link>
+      <router-link to="/">Shopping</router-link>
     </h1>
     <nav>
       <ul>
@@ -18,7 +20,6 @@
       </ul>
     </nav>
     <div>
-      <button class="btn btn-primary">Button</button>
       <button v-if="!isLoggedIn" @click="login">Login</button>
       <button v-if="isLoggedIn" @click="logout">Logout</button>
     </div>
