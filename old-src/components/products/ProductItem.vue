@@ -13,22 +13,21 @@
       </div>
     </div>
     <div class="product__actions">
-      <button @click="addToCart">Add to Cart</button>
+      <button @click="addToCart">Sepete Ekle</button>
     </div>
   </li>
 </template>
 
 <script>
 export default {
-  inject: ['addProductToCart'],
   props: ['id', 'image', 'title', 'price', 'description'],
   methods: {
     addToCart() {
-      this.addProductToCart({
+      this.$store.dispatch('cart/addToCart',{
         id: this.id,
-        image: this.image,
-        title: this.title,
-        price: this.price,
+        // image: this.image,
+        // title: this.title,
+        // price: this.price,
       });
     },
   },

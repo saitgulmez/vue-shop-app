@@ -1,21 +1,18 @@
 import { createApp } from 'vue';
-import { createStore } from 'vuex';
-
+import store from './store/index.js'
 import router from './router.js';
 import App from './App.vue';
+// import 'bootstrap';
+// import 'bootstrap/dist/css/bootstrap.css'
+
 import BaseBadge from './components/ui/BaseBadge.vue';
 
 const app = createApp(App)
 
-const store = createStore({
-	state() {
-		return {
 
-		}
-	}
-});
 
 app.use(router);
+app.use(store);
 
 app.component('base-badge', BaseBadge);
 

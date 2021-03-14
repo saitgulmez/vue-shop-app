@@ -1,8 +1,6 @@
 <template>  
+  <component :is="TheHeader"/>
   <the-header></the-header>
-  <!-- <component :is="TheHeader"/> -->
-  <the-collapse> </the-collapse>
-  <!-- <component :is="TheCollapse"/> -->
   <router-view></router-view>
 </template>
 
@@ -11,7 +9,7 @@ import TheHeader from './components/nav/TheHeader.vue';
 
 export default {
   components: {
-    TheHeader,
+    TheHeader
   },
   methods: {
 

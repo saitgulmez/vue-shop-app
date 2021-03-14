@@ -1,18 +1,22 @@
 <template>
-
-
-  <header>
-    <h1>
-      <router-link to="/">Shopping</router-link>
-    </h1>
-    <nav>
+  <header class="sticky-top">
+    <nav class="nav navbar-expand-lg navbar-light bg-light  ">
+    <h3 class="bg-light">
+      <router-link to="/">
+      Alışveriş
+      </router-link>
+    </h3>
       <ul>
         <li>
-          <router-link to="/products">Products</router-link>
+          <h3>
+            <router-link to="/products">Ürünler</router-link>
+          </h3>
         </li>
         <li>
-          <router-link to="/cart">Cart</router-link>
+          <h3>
+            <router-link to="/cart">Sepetim</router-link>
           <base-badge mode="elegant">{{ cartQuantity }}</base-badge>
+          </h3>
         </li>
         <li v-if="isLoggedIn">
           <router-link to="/admin">Admin</router-link>
@@ -20,8 +24,8 @@
       </ul>
     </nav>
     <div>
-      <button v-if="!isLoggedIn" @click="login">Login</button>
-      <button v-if="isLoggedIn" @click="logout">Logout</button>
+      <button v-if="!isLoggedIn" @click="login">Giriş</button>
+      <button v-if="isLoggedIn" @click="logout">Çıkış</button>
     </div>
   </header>
 </template>
@@ -62,7 +66,6 @@ ul {
   margin: 0;
   padding: 0;
   display: flex;
-  justify-self: center;
   align-items: center;
 }
 
@@ -82,7 +85,7 @@ a:hover,
 a:active,
 a.router-link-active {
   color: #45006d;
-  border-color: #45006d;
+  /*border-color: #45006d;*/
 }
 
 button {
