@@ -25,9 +25,11 @@ export default {
   },
   computed: {
     cartTotal() {
-      return this.$store.getters['cart/totalSum'];
-      // const x = this.$store.getters['cart/totalSum'];
-      // return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      // console.log(this.$store.getters['cart/totalSum'].toString().replace(/\B(?=(\d{3})+(?!\d))/g, ","))
+      // return this.$store.getters['cart/totalSum'];
+      const x = this.$store.getters['cart/totalSum'];
+      const total = x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      return total;
       
     },
     cartItems() {
