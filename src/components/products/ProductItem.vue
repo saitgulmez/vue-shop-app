@@ -8,7 +8,8 @@
       <div class="product__text">
         <h3>{{ title }}</h3>
         <base-badge mode="highlight" :no-margin-left="true">
-          <h4>{{ price }} TL</h4>
+          <!-- <h4>{{ price }} TL</h4> -->
+          <h4>{{ productPrice }} TL</h4>
         </base-badge>
         <p>{{ description }}</p>
       </div>
@@ -23,6 +24,14 @@
 <script>
 export default {
   props: ['id', 'image', 'title', 'price', 'description'],
+  computed: {
+    productPrice() {
+      // return (this.price * this.qty);
+      const x = this.price;
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    }
+  },
+
   methods: {
     addToCart() {
       this.$store.dispatch('cart/addToCart',{

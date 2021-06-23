@@ -8,7 +8,8 @@
       <div class="item__data">
         <div>
           Ürün Fiyatı :
-          <strong>{{ price }} TL</strong>
+          <!-- <strong>{{ price }} TL</strong> -->
+          <strong>{{ productPrice }} TL</strong>
         </div>
         <div>
           Adet:
@@ -26,7 +27,14 @@ export default {
   props: ['prodId', 'title', 'image', 'price', 'qty'],
   computed: {
     itemTotal() {
-      return (this.price * this.qty).toFixed(2);
+      // return (this.price * this.qty);
+      const x = (this.price * this.qty);
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+    },
+    productPrice() {
+      // return (this.price * this.qty);
+      const x = this.price;
+      return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
     }
   },
   methods: {

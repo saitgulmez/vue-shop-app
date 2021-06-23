@@ -10,7 +10,7 @@ export default {
           title: 'iPhone',
           description:
             'Apple iPhone 12 Pro, 128 GB, Pacific Blue, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)',
-          price: 14198.99
+          price: 14198.99,
         },
         {
           id: 'p2',
