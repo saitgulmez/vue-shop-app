@@ -1,5 +1,6 @@
 <template>
-  <li class="product">
+  <!-- <li class="product"> -->
+    <base-card>
     <div class="product__data">
       <div class="product__image">
         <img :src="image" :alt="title" />
@@ -7,7 +8,7 @@
       <div class="product__text">
         <h3>{{ title }}</h3>
         <base-badge mode="highlight" :no-margin-left="true">
-          <h4>${{ price }}</h4>
+          <h4>{{ price }} TL</h4>
         </base-badge>
         <p>{{ description }}</p>
       </div>
@@ -15,7 +16,8 @@
     <div class="product__actions">
       <button @click="addToCart">Sepete Ekle</button>
     </div>
-  </li>
+    </base-card>
+  <!-- </li> -->
 </template>
 
 <script>
@@ -46,13 +48,13 @@ li {
 }
 
 .product__image {
-  margin-right: 1rem;
+  margin-right: 2rem;
 }
 
 .product__image img {
-  height: 10rem;
-  width: 10rem;
-  object-fit: cover;
+  height: 20rem;
+  width: 12rem;
+  /* object-fit: cover; */
 }
 
 .product__text h3 {

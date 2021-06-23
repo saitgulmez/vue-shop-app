@@ -6,28 +6,28 @@ export default {
         {
           id: 'p1',
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Books_HD_%288314929977%29.jpg/640px-Books_HD_%288314929977%29.jpg',
-          title: 'Book Collection',
+            'https://images-na.ssl-images-amazon.com/images/I/61elAX4NTML._AC_SL1500_.jpg',
+          title: 'iPhone',
           description:
-            'A collection of must-read books. All-time classics included!',
-          price: 99.99,
+            'Apple iPhone 12 Pro, 128 GB, Pacific Blue, Kulaklık ve Adaptör Hariç (Apple Türkiye Garantili)',
+          price: 14198.99
         },
         {
           id: 'p2',
           image:
-            'https://upload.wikimedia.org/wikipedia/en/thumb/c/c9/Tent_at_High_Shelf_Camp_cropped.jpg/640px-Tent_at_High_Shelf_Camp_cropped.jpg',
-          title: 'Mountain Tent',
-          description: 'A tent for the ambitious outdoor tourist.',
-          price: 129.99,
+            'https://images-na.ssl-images-amazon.com/images/I/61jM2A8lQ2L._AC_SL1500_.jpg',
+          title: 'Samsung Galaxy Note 10',
+          description: 'Samsung Galaxy Note 10 Lite 128 GB N770F Aura Black.',
+          price: 5069.99
         },
         {
           id: 'p3',
           image:
-            'https://upload.wikimedia.org/wikipedia/commons/thumb/6/6d/Good_Food_Display_-_NCI_Visuals_Online.jpg/640px-Good_Food_Display_-_NCI_Visuals_Online.jpg',
-          title: 'Food Box',
+            'https://productimages.hepsiburada.net/s/49/550/10983951073330.jpg/format:webp',
+          title: 'Apple MacBook Pro',
           description:
-            'May be partially expired when it arrives but at least it is cheap!',
-          price: 6.99,
+            'Apple MacBook Pro M1 Çip 8GB 256GB SSD macOS 13" QHD Taşınabilir Bilgisayar Uzay Grisi MYD82TU/A',
+          price: 12699.01,
         },
       ],
 		}

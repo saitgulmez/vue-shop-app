@@ -7,16 +7,16 @@
       <h3>{{ title }}</h3>
       <div class="item__data">
         <div>
-          Price per Item:
-          <strong>${{ price }}</strong>
+          Ürün Fiyatı :
+          <strong>{{ price }} TL</strong>
         </div>
         <div>
-          Quantity:
+          Adet:
           <strong>{{ qty }}</strong>
         </div>
       </div>
-      <div class="item__total">Total: ${{ itemTotal }}</div>
-      <button @click="remove">Remove</button>
+      <div class="item__total">Toplam: {{ itemTotal }} TL</div>
+      <button @click="remove">Çıkar</button>
     </div>
   </li>
 </template>
@@ -47,9 +47,9 @@ li {
 }
 
 img {
-  width: 5rem;
-  height: 5rem;
-  border-radius: 50%;
+  width: 10rem;
+  height: 10rem;
+  /* border-radius: 50%; */
   object-fit: cover;
 }
 

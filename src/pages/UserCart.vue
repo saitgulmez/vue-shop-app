@@ -1,7 +1,7 @@
 <template>
   <section>
     <h2>Sepetim</h2>
-    <h3>Toplam Tutar: <base-badge mode="elegant">${{ cartTotal }}</base-badge></h3>
+    <h3>Toplam Tutar: <base-badge mode="elegant">{{ cartTotal }} TL</base-badge></h3>
     <ul>
       <cart-item
         v-for="item in cartItems"
