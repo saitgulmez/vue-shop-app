@@ -26,6 +26,9 @@ export default {
   computed: {
     cartTotal() {
       return this.$store.getters['cart/totalSum'];
+      // const x = this.$store.getters['cart/totalSum'];
+      // return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+      
     },
     cartItems() {
       return this.$store.getters['cart/products'];

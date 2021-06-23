@@ -12,11 +12,12 @@
           <h4>{{ productPrice }} TL</h4>
         </base-badge>
         <p>{{ description }}</p>
+      <button @click="addToCart">Sepete Ekle</button>
       </div>
     </div>
-    <div class="product__actions">
+    <!-- <div class="product__actions">
       <button @click="addToCart">Sepete Ekle</button>
-    </div>
+    </div> -->
     </base-card>
   <!-- </li> -->
 </template>
@@ -74,9 +75,9 @@ li {
   margin: 0;
 }
 
-.product__actions {
+/* .product__actions {
   text-align: center;
-}
+} */
 
 button {
   font: inherit;
@@ -93,4 +94,34 @@ button:active {
   background-color: #760ab4;
   border-color: #760ab4;
 }
+
+button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #234075;
+  color: white;
+  border: 1px solid #1f6d00;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+}
+
+button:hover,
+button:active {
+  background-color: #1f6d00;
+  border-color: #1f6d00;
+}
+/* button {
+  font: inherit;
+  cursor: pointer;
+  background-color: #45006d;
+  color: white;
+  border: 1px solid #45006d;
+  padding: 0.5rem 1.5rem;
+  border-radius: 30px;
+}
+button:hover,
+button:active {
+  background-color: #760ab4;
+  border-color: #760ab4;
+} */
 </style>

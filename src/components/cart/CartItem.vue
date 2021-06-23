@@ -40,7 +40,7 @@ export default {
   methods: {
     remove() {
       this.$store.dispatch('cart/removeFromCart', {productId: this.prodId});
-    }
+    },
   }
 };
 </script>

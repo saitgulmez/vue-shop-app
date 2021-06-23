@@ -7,7 +7,8 @@ import ShopAdmin from './pages/ShopAdmin.vue';
 const router = createRouter({
   history: createWebHistory(),
   routes: [
-    { path: '/', redirect: '' },
+    // { path: '/', redirect: '' },
+    { path: '/', component: ProductsList  },
     { path: '/products', component: ProductsList },
     { path: '/cart', component: UserCart },
     { path: '/admin', component: ShopAdmin },
